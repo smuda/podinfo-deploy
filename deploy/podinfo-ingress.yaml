@@ -11,9 +11,13 @@ spec:
   rules:
   - http:
       paths:
+#      - backend:
+#          serviceName: podinfo
+#          servicePort: 9898
+#        path: /podinfo
       - backend:
-          serviceName: podinfo
-          servicePort: 9898
-        path: /podinfo
+          serviceName: whiskey
+          servicePort: 3000
+        path: /
 status:
   loadBalancer: {}
